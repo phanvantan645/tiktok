@@ -1,0 +1,244 @@
+.wrapper {
+    display: flex;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 32px;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -14px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 999px;
+    }
+}
+
+.content {
+    width: 624px;
+    flex: 1 1 624px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.decription {
+    position: relative;
+    margin-right: 114px;
+}
+
+.follow-btn {
+    position: absolute;
+    right: -114px;
+    top: 8px;
+    border-radius: 2px;
+}
+
+.author {
+    display: block;
+    &:hover > .username {
+        text-decoration: underline;
+    }
+}
+
+.username {
+    margin-right: 2px;
+    line-height: 24px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.display-name {
+    line-height: 28px;
+    font-size: 1.4rem;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.video-decription {
+    padding-top: 2px;
+    font-size: 16px;
+    line-height: 21px;
+    word-break: break-word;
+}
+
+.description-content {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    .display-name,
+    .music-name {
+        font-size: 1.4rem;
+        line-height: 14px;
+    }
+    &:hover .display-name,
+    &:hover .music-name {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.music-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.video {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    .action {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8px;
+        .action-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            .action-value {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: rgba(22, 24, 35, 0.75);
+            }
+        }
+        .action-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+            background-color: rgba(22, 24, 35, 0.06);
+            svg {
+                width: 26px;
+                height: 26px;
+            }
+            &.active {
+                svg {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.video-content {
+    width: 262px;
+    cursor: pointer;
+    position: relative;
+    .video-src {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .video-control {
+        display: none;
+    }
+    &:hover {
+        .video-control {
+            display: block;
+        }
+        .more-btn {
+            display: block;
+        }
+    }
+}
+
+.control-btn {
+    min-width: 28px;
+    min-height: 28px;
+    color: var(--white);
+    z-index: 10;
+    background-color: transparent;
+
+    &.more-btn {
+        display: none;
+        min-width: 32px;
+        min-height: 32px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+}
+
+.video-control {
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    bottom: 12px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    .control-btn {
+        padding: 8px;
+        svg {
+            width: 24px;
+        }
+    }
+    .sound-btn {
+        position: relative;
+        .sound-range {
+            padding: 12px 24px;
+            display: none;
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:hover {
+            .sound-range {
+                display: block;
+            }
+        }
+    }
+}
+
+.timer-ranger {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.timer-value {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.check {
+    width: 18px;
+    height: 18px;
+    color: rgb(32, 213, 236);
+    position: relative;
+    top: 3px;
+}

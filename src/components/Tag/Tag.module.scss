@@ -1,0 +1,7 @@
+.tag {
+    font-weight: 600;
+    color: rgb(43, 93, 185) !important;
+    &:hover {
+        text-decoration: underline !important;
+    }
+}

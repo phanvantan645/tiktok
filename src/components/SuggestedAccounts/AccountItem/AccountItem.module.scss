@@ -1,0 +1,63 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color ease-in-out 200ms;
+    -webkit-transition: background-color ease-in-out 200ms;
+    -moz-transition: background-color ease-in-out 200ms;
+    -ms-transition: background-color ease-in-out 200ms;
+    -o-transition: background-color ease-in-out 200ms;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+.info {
+    margin-left: 12px;
+}
+
+.username,
+.name {
+    line-height: 1;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.name {
+    font-size: 1.2rem;
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    line-height: 15px;
+    max-width: 145px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.user-check {
+    width: 14px;
+    height: 14px;
+    color: rgb(32, 213, 236);
+    margin-left: 5px;
+}

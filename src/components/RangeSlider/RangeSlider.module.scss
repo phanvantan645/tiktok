@@ -1,0 +1,12 @@
+.track-horizontal {
+    &:hover {
+        height: 4px;
+        .active-track {
+            height: 4px !important;
+        }
+
+        .thumb {
+            height: 12px !important;
+        }
+    }
+}

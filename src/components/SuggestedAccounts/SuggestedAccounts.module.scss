@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative;
+    padding: 16px 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+        transform: scaleY(0.5);
+    }
+}
+
+.label {
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 600;
+
+    padding: 0 8px;
+    margin-bottom: 8px;
+}
+
+.more-btn {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-top: 8px;
+    padding: 0 8px;
+}
